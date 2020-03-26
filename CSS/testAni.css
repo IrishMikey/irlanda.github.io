@@ -1,0 +1,117 @@
+#lepre{
+  width:10%;
+  top:5em;
+  position:absolute;
+  left:-10em;
+  animation-duration: 6s;
+  animation-name: lepRun;    
+  animation-iteration-count:  1;
+  animation-direction: normal;
+  animation-timing-function:linear;
+  animation-delay: 1.7s;
+}
+#lepButton{
+  display: block;
+  position:absolute;
+  z-index:3;
+  top:9%;
+  left:95%;
+  width:4%;
+  background-color:#023902;
+  border:aliceblue 5px solid;
+  border-radius:999px;
+  animation-duration: 2s;
+  animation-name: buttonMove;    
+  animation-iteration-count:  infinite;
+  animation-direction: normal;
+  animation-timing-function:linear;
+   animation-delay: 4s;
+}
+#lepButton img{
+  position:relative;
+  width:100%;
+  left:10%
+
+}
+#lepBridge{
+  position: absolute;
+  left: 35.9%;
+  top:7.4em;
+  transform:scale(1.053);
+}
+#Gold{
+ width:10%;
+  top:5em;
+  position:absolute;
+  left:-10em;
+  animation-duration: 5s;
+  animation-name: GoldLep;    
+  animation-iteration-count:  1;
+  animation-direction: normal;
+  animation-timing-function:linear;
+  animation-delay: 1.2s;
+}
+
+
+
+#lepHouse{  
+  position:relative;
+  width:  100%;
+  z-index:-1;
+}
+
+
+
+@keyframes lepRun{
+  from{
+  transform: translate(2em);
+  }
+  to{
+    transform: translateX(170em)
+  }
+}
+@keyframes buttonMove{
+  from {    
+    transform:rotate(-15deg);
+  }
+  to{
+     transform:rotate(15deg)
+  }
+}
+
+@keyframes menuDrop{
+  from{
+  transform: translateY(0);
+  }
+  20%{
+    transform: translateY(75%)
+  }
+  85%{
+    transform: translateY(75%)
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+
+@keyframes GoldLep{
+  from {
+    transform:translate(0,0) rotate(25deg)
+  }   
+  
+  20%{
+      transform:translate(30em,1ex) rotate(20deg)
+  }
+  40%{
+      transform:translate(60em,0) rotate(25deg)
+  }
+  60%{
+      transform:translate(90em,1ex) rotate(20deg)
+  }
+  80%{
+      transform:translate(120em,0ex) rotate(25deg)
+  }
+  to{
+    transform:translate(150em, 1ex) rotate(20deg)
+  }
+}
