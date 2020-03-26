@@ -50,19 +50,19 @@ body, html {
 }
 
 .BGimg1{
-  background-image: url(../imagenes/Moher.jpg);
+  background-image: url(Imagenes/Moher.jpg);
   min-height: 100%;
 }
 
 .BGimg2{
-  background-image: url(../imagenes/castle.jpg);
+  background-image: url(Imagenes/castle.jpg);
   min-height: 600px;
   z-index: 0;
   background-position: center;
 }
 
 .BGimg3{
-  background-image: url(../imagenes/harbor.jpg);
+  background-image: url(Imagenes/harbor.jpg);
   min-height: 700px;
   background-position: center;
 }
