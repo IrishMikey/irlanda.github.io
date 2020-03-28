@@ -131,7 +131,10 @@ section h2{
   background-color: #f4f4f4;
   color:#666;
 }
-
+#ire{
+  color:green;
+  font-style: italic;
+}
 .secLight img{
   position:relative;
   top:10ex;
@@ -144,11 +147,6 @@ section img:hover{
   z-index:3
 }
 
-#ire{
-  color:green;
-  font-style: italic;
-}
-
 .secDark{
   background-color: #282e34;
   color:#c6ecff;
@@ -156,10 +154,8 @@ section img:hover{
 .secDark p{
   text-align:justify;
   font-size: 28pt;
-
 }
 .secDark img{
-
   position:relative;
   box-shadow: 15px 15px 15px #0e1013;
   transition: transform 0.2s ease;

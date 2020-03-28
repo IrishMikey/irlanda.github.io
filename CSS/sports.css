@@ -48,8 +48,9 @@ iframe{
 	margin-left: auto;
 	margin-right: auto;
 }
-li:before {
-content: '\1F95E';
-margin-left: -20px;
-margin-right: 10px;
+#hurling{
+	list-style-image: url('../Imagenes/sliotar.png');
+}
+#football{
+	list-style-image: url('../Imagenes/footballIcon.png');
 }
