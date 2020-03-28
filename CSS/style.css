@@ -1,47 +1,93 @@
 body, html {
   height: 100%;
-    margin:0;
-    transform-style:preserve-3d;
-    padding:0;
-    overflow-x:hidden;
-    transition: transform 0.25s ease; 
+  margin:0;
+  transform-style:preserve-3d;
+  padding:0;
+  overflow-x:hidden;
+  transition: transform 0.25s ease; 
 }
-.menu {
-  position:absolute;
-  z-index: 2;
-  width:  100%;
-  background-color:#616358;
-   top:-35.4%;   
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 7vh;
+  max-height: 8vh;
+  background-color:#616358; 
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 30px;
+  color: wheat;
+  letter-spacing: 5px;
 }
-
+#logoText{
+  display: none;
+}
 .nav-bar{
-  list-style: none;
-  margin-top: 1px;
-  margin-bottom:5px;
-  text-align: center;
-  padding: 1px 10px;        
-  font-size: 20pt;    
-  
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
 }
 .nav-bar li {
-  display: inline;
-  padding: 14px 15px;
-
+  list-style: none;
 }
 .nav-bar li a{
   text-decoration: none;
-  color: wheat;
-  padding-left: 5px;
   text-transform: uppercase;
-  text-shadow: 1px 1px 1px #424242;
-  transition: transform 0.25s ease;
-
+  letter-spacing: 3px;
+  transition: transform 0.25s ease-in-out;
+  padding: 5px;
+  color: wheat;
 }
 .nav-bar li a:hover{
-  text-decoration: underline;
-  text-shadow: 3px 3px 3px #424242;
+  background-color: #424242;
+}
+#burger{
+  display: none;
+  cursor: pointer; 
+
+}
+#burger div{
+  border-radius: 2px;
+  width: 27px;
+  height: 3px;
+  margin: 5px;
+  background-color: wheat;
+}
+@media screen and (max-width: 1470px){
+  .nav-bar{
+    width: 70%
+  } 
+}
+@media screen and (max-width: 1200px){
+  .nav-bar{
+    width: 70%
+  } 
 }
 
+@media screen and (max-width: 1050px){  
+  .nav-bar{
+    position: absolute;
+    right: 0px;
+    height: 93vh;
+    top: 5vh;
+    display: flex;
+    flex-direction: column;
+    background-color:#616358; 
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    }
+    #burger{
+    display: block;
+    }
+    #logoText{
+    display: inline-block;
+    }
+    
+}
+.nav-active{
+      transform: translateX(0%);
+}
 .BGimg1, .BGimg2, .BGimg3{
   position: relative;
   background-repeat: no-repeat;
@@ -189,11 +235,18 @@ section img:hover{
 .secLight2{
   background-color: #f4f4f4;
   color:#666;
-  column-count:1
+  content-align: center;
 }
-.links{
-  color:wheat;
-  border:solid;
-  border:saddlebrown solid 1px;  
-  text-align:center;
+.bottom-bar{
+  width: 80%;
 }
+.bottom-bar li{
+  list-style: none;
+  display: inline-block;  
+  
+}
+.bottom-bar p{
+  font-size: 20px;
+  
+}
+
