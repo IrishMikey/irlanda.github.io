@@ -1,0 +1,48 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding:0;
+  overflow-x:hidden;
+  background-image: url(../Imagenes/cashle.jpg) ;
+  position: relative;
+  background-color: rgba();
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-attachment: fixed;
+  transition: transform 0.25s ease;  
+  font-family: 'Inknut Antiqua', serif;  
+}
+#form{
+	color: #4d583f;
+	margin: auto;
+	top:20%;
+	position: relative;
+	border: 2px dotted green;
+	height: 60%;
+	background-color: wheat;
+	width: 50%;
+	border-radius: 15px;
+	box-shadow: 5px 8px 5px #2d2d2d;
+}
+form{
+	padding: 20px;
+}
+input, select {
+color:#4d583f;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit]{
+	position: relative;
+	width: 50%;
+	left: 25%;
+}
+.footer{
+  position: relative;
+  top: 25.5em;
+}

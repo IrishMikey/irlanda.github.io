@@ -1,0 +1,130 @@
+nav {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 4vh;
+  background-color:#4d583f; 
+  font-size: 15px;
+  color: wheat;
+  letter-spacing: 5px;
+  font-weight: bold;  
+  opacity: 98%;
+  width: 100%;
+  box-shadow: 0px 2px #363c2e;
+}
+#logoText{
+  display: none;
+}
+.nav-bar{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.nav-bar li {
+  position: relative;
+  list-style: none;
+  height: 100%
+
+}
+.nav-bar li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: background-color 0.5s ease-in-out;
+  padding: 5px;
+  color: wheat;
+
+}
+.nav-bar li:hover{
+  background-color: #424242;
+
+}
+#burger{
+  display: none;
+  cursor: pointer; 
+
+}
+#burger div{
+  border-radius: 2px;
+  width: 27px;
+  height: 3px;
+  margin: 5px;
+  background-color: wheat;
+}
+@media screen and (max-width: 1470px){
+  .nav-bar{
+    width: 70%
+  } 
+}
+@media screen and (max-width: 1200px){
+  .nav-bar{
+    width: 70%
+  } 
+}
+
+@media screen and (max-width: 1050px){  
+  .nav-bar{
+    position: absolute;
+    right: 0px;
+    height: 93vh;
+    top: 5vh;
+    display: flex;
+    flex-direction: column;
+    background-color:#616358; 
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    }
+    #burger{
+    display: block;
+    }
+    #logoText{
+    display: inline-block;
+    }
+    
+}
+.nav-active{
+      transform: translateX(0%);
+}
+.footer{
+
+}
+
+.bottom-bar{ 
+  top: 5px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 30%;
+  overflow: hidden;
+  justify-content: space-around;
+  bottom: 20px;
+  font-size: 20pt;
+}
+.bottom-bar li{
+  list-style: none;
+  justify-content:space-between;
+  animation-name: footer;
+  animation-direction: normal;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.bottom-bar p{
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+@keyframes footer{
+  from{
+    transform: translateX(-37em);
+  }
+  to{
+    transform: translateX(34em);
+  }
+}

@@ -1,4 +1,4 @@
-/* LepButton Animation
+// LepButton Animation
 //Get the button:
 const buttonToTop = document.getElementById("BtnTop");
 
@@ -7,19 +7,19 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    BtnTop.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    BtnTop.style.display = "none";
   }
 }
-*/
+
 // Para subir al principio de la pagina
 function topFunction() {
   document.body.scrollTop = 0; // para Safari
   document.documentElement.scrollTop = 0; // para Chrome, Firefox, IE y Opera
 }
 
-//Código para el menu
+//Código para el menu(no funciona bien)
 const navSlide= () => {
     const burger = document.querySelector('#burger');
     const nav = document.querySelector('.nav-bar');

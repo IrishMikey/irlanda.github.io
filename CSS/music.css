@@ -4,47 +4,94 @@
 }
 body{
 	background-color: #e4e8d0;
+	color: #616358;
+	margin: 0;
+	font-family: 'Inknut Antiqua', serif;
+	
 }
-.text_inner{
+.nav-button-musica{
+	
+  background-color:#4d583f; 
+}
+.musicTable{
 	position: relative;
-	width: 50%;
-	column-count: 1;
-	margin-left:auto;
-	margin-right: auto;
-	font-size: 17pt;
+	margin:auto;
+	width: 80%;;
 }
-.entry_title{
-	text-align: center;
-	font-family: CelticFont;
-	color: black;
-	font-size: 45pt;
-	letter-spacing: 5px;
-	text-transform: capitalize;	
-}
-h2, h3{	
-	font-family: CelticFont;
-	font-size: 31pt;
-	letter-spacing: 1px;
-}
-h3{		
-	font-size: 25pt;
-	letter-spacing: 1px;
-}
-.menu{
-	top: 0;
-}
-p img{
+table{
+	top:2em;
+	position: relative;
 	width: 100%;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 30px;
-	box-shadow: 10px 10px #b8bba8;
+	margin: auto;	
+}
+th{
+	text-align: center;
+	font-size: 25px;
+	font-style: italic;
+	z-index: 2;
+}
+table, td {
+	border-collapse: collapse;
+}
+tbody{
+	background-color: #4d583f;
+}
+td{
+	width: 25%;
+	margin: auto;
+	text-align: center;
+	padding: 25px;
+	color: wheat;
+	height: 20em;
+	transition: transform 0.25s ease-in-out;
 }
 iframe{
+	border: double 5px #e4e8d0;
 	border-radius: 20px;
-	position: relative;
 	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+	height: 100%;	
+	z-index: 0;
+}
+td:hover{
+	background-color: #474840;
+	transform: scale(1.1);
+	border-radius: 5px;
+}
+td:hover .songInfo{
+	visibility: visible;
+}
+#mIcons{
+	position: absolute;
+	height: 2%;
+	top:55px;
+	width: 35%;
+	left: 32%;
+	z-index: 1;
+	opacity: 60%;
+}
+.musicIcon{	
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+}
+#iconA{
+	left:0px;
+}
+#iconB{
+	right:0px;
+}
+.songInfo{	
+	padding: 10px;
+	top: 99%;
+	text-align: center;
+	right: 0%;
+	width: 97%;
+	position: absolute;
+	visibility: hidden;
+	z-index: 3;
+	background-color: #474840;
+	border-radius: 4px;
+}
+.footer{
+	margin: 20px;
 }
